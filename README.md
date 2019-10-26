@@ -26,5 +26,10 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+============移动端开发遇到的小问题=====================
+1 解决 eslint 空格tab 不分问题 
+找到vue 项目中的 .eslintrc.js , 在rules 中 添加
+  'no-tabs': 0,
+  'no-mixed-spaces-and-tabs': 0,
+  'indent': ["off", "tab"],
+  'no-trailing-spaces': 0,
