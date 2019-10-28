@@ -3,11 +3,25 @@
   <div class="login-box">
     <div class="m-logo" ></div>
     <div class="login-btns">
-			<van-button type="primary" size="large">大号按钮</van-button>
-			<van-button type="primary" size="large">大号按钮</van-button>
+			<router-link to="/login/phone">
+				<van-button size="large" class="button-style">手机号登录</van-button>
+			</router-link>
+			<router-link to="/login/password">
+				<van-button size="large" class="button-style">密码登录</van-button>
+			</router-link>
+			<router-link to="/login/register">
+				<van-button size="large" type="primary">手机号一键注册</van-button>
+			</router-link>
 		</div>
   </div>
 </template>
+
+<script>
+import 'vant/lib/button/style'
+export default {
+	
+}
+</script>
 
 <style lang="stylus">
 .login-box
@@ -17,5 +31,11 @@
     text-align: center;
     padding: 130px 0 0;
     margin: 15px 0;
+	.login-btns
+		.button-style
+			font-size: 14px;
+			height: 42px;
+			line-height: 42px;
+			margin-bottom: 15px;
 
 </style>

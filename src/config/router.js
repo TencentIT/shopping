@@ -20,6 +20,21 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: () => import('../page/account/login')
+    },
+    {
+      path: '/login/phone',
+      name: 'login-phone',
+      component: () => import('../page/account/phone-login')
+    },
+    {
+      path: '/login/password',
+      name: 'password-login',
+      component: () => import('../page/account/password-login')
+    },
+    {
+      path: '/login/register',
+      name: 'register-login',
+      component: () => import('../page/account/register-login')
     }
   ]
 })
